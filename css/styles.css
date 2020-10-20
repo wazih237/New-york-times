@@ -1,1 +1,8 @@
-
+html[Attributes Style] {
+    -webkit-locale: "en";
+}
+body {
+    color: #333;
+    background-color: white;
+    line-height: 1;
+}
