@@ -1,8 +1,20 @@
 html[Attributes Style] {
-  -webkit-locale: "en";
+    -webkit-locale: "en";
 }
+
 body {
-  color: #333;
-  background-color: white;
-  line-height: 1;
+    color: #333;
+    background-color: white;
+    line-height: 1;
+}
+
+nav .line {
+    width: 30px;
+    height: 50px;
+    color: black;
+}
+
+nav {
+    display: flex;
+    text-align: center;
 }
