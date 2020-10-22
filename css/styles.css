@@ -1,7 +1,3 @@
-html[Attributes Style] {
-    -webkit-locale: "en";
-}
-
 body {
     color: #333;
     background-color: white;
@@ -17,4 +13,30 @@ nav .line {
 nav {
     display: flex;
     text-align: center;
+}
+footer {
+  display: block;
+  padding: 0 3% 45px;
+  margin: 0 auto;
+ margin-top: 0px;
+ margin-right: auto;
+ margin-bottom: 0px;
+ margin-left: auto;
+ max-width: 1200px;
+ font-size: 11px;
+ text-align: center;
+}
+.footerNav {border-top:1px solid #ebebeb;
+  border-top-color: rgb(235, 235, 235);
+  border-top-style: solid;
+  border-top-width: 1px; 
+  padding-top: 9px;
+  display: block;
+
+}
+.footer {
+  display: inline-block;
+ list-style: none;
+ margin: 0 0 35px;
+ padding: 0%;
 }
