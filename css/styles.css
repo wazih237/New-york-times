@@ -1,3 +1,16 @@
+@font-face {
+    font-family: franklin;
+    src: url("assets/fonts/franklin-normal-400.woff"), url('assets/fonts/franklin-normal-400.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: cheltenham;
+    src: url("assets/fonts/cheltenham-italic-700.woff2");
+    font-style: italic;
+    font-weight: 700;
+}
+
 body {
     color: #333;
     background-color: white;
@@ -143,6 +156,25 @@ button {
     align-items: flex-end;
 }
 
+.para {
+    justify-content: flex-start;
+    margin: 0%;
+}
+
+.img-1 {
+    width: 50%;
+}
+
+.para img {
+    width: 60%;
+}
+
+.para article {
+    font-size: 1.25rem;
+    width: 50%;
+    margin-left: 90px;
+}
+
 
 /*.nav2 ul {
     display: block;
@@ -226,3 +258,21 @@ footer {
 .nav2sec {
     flex: 1 1 0%;
 }
+
+
+/*
+1:07
+aside header h1 {
+  font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  margin: 0;
+}
+header.main h1 {
+  font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  color: #121212;
+  font-size: 40px;
+}*/
