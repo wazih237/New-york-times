@@ -115,71 +115,26 @@ button {
   margin-top: 100px;
 }
 
-.title img {
-  width: 70%;
-}
-
-.title figcaption {
-  width: 55%;
-  margin-left: 200px;
-  text-align: justify;
-  font-size: 0.9378em;
-}
-
-.title figcaption span {
-  color: rgb(184, 180, 180);
-}
-
-.container {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.author {
-  color: black;
-  font-weight: 800;
-  text-decoration: none;
+main {
+  margin-top: 100px;
   display: flex;
-  width: 100%;
-  margin-left: 350px;
-  font-size: 1em;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30%;
+  margin-right:30%;
+}
+img {
+  max-width: 100%;
 }
 
-.author a {
-  text-decoration: none;
-  color: black;
+figure h1{
+  font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  color: #121212;
+  font-size: 30px;
 }
 
-.social {
-  list-style: none;
-  display: flex;
-  margin-left: 310px;
-}
-
-.social-icons {
-  align-items: flex-end;
-}
-
-.para {
-  margin: 0%;
-}
-
-
-.para article {
-  font-size: 1.25rem;
-  width: 50%;
-  margin-left: 90px; 
-}
-
-
-.img-1 {
-  width: 50%;
-}
-
-.para img {
-  width: 60%;
-}
 
 
 .nav2 ul {
