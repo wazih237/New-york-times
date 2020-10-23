@@ -1,14 +1,34 @@
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
 @font-face {
-  font-family: franklin;
+  font-family: 'franklin';
   src: url("assets/fonts/franklin-normal-400.woff"), url('assets/fonts/franklin-normal-400.woff2');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: cheltenham;
+  font-family: 'cheltenham';
   src: url("assets/fonts/cheltenham-italic-700.woff2");
   font-style: italic;
   font-weight: 700;
+}
+
+@font-face {
+  font-family: 'imperial';
+  src: url("assets/fonts/imperial-normal-400.woff2");
+  font-weight: 400;
 }
 
 body {
@@ -17,21 +37,35 @@ body {
   line-height: 1;
 }
 
-main{
-  align-items: center;
+/* nav .line {
+    width: 30px;
+    height: 50px;
+    color: black;
+} */
+
+/* div {
+    display: block;
+} */
+
+figure img {
+  max-width: 100%;
 }
 
-nav .line {
-  width: 30px;
-  height: 50px;
-  color: black;
+.icons {
+  height: 15px;
+  width: 15px;
+  margin: 7px;
+  border: 1px #eee solid;
+  padding: 7px;
+  background-color: #eee;
+  border-radius: 100%;
 }
 
-div {
-  display: block;
+.icons:hover {
+  background-color: white;
 }
 
-nav{
+nav {
   display: flex;
   position: fixed;
   font-size: 100%;
@@ -41,8 +75,20 @@ nav{
   left: 0;
   background-color: #fff;
   align-items: center;
+  align-content: center;
   height: 50px;
   border-bottom: 1px solid grey;
+  justify-content: space-between;
+  z-index: 10;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-icons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -65,15 +111,43 @@ nav{
   margin-right: 10px;
 }
 
-i {
-  padding: 5px;
-  height: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 100%;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  min-width: inherit;
+}
+
+.social-icons svg {
+  padding: 8px;
+}
+
+/* i {
+    height: 25px;
 }
 
 i:hover {
-  background: rgb(194, 191, 191);
+    background: rgb(194, 191, 191);
+} */
+
+.main-image {
+  max-width: 1050px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.section-img {
+  height: 500px;
+  width: 300px;
 }
 
 .space {
@@ -83,20 +157,18 @@ i:hover {
 }
 
 .new {
-  margin:5px;
-  height:30px;
+  margin: 5px;
+  height: 30px;
 }
 
 .btn {
-  right: 30px;
   font-size: 100%;
-  display: flex;
-  justify-content: space-around;
-  position: absolute;
+  justify-content: space-between;
+  margin-right: 10px;
 }
 
 button {
-  margin: 5px;
+  margin-right: 10px;
   background: rgb(86, 123, 149);
   cursor: pointer;
   padding: 9px;
@@ -111,7 +183,7 @@ button {
 }
 
 .title h1 {
-  font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+  font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
   margin-top: 100px;
 }
 
@@ -120,22 +192,72 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 30%;
-  margin-right:30%;
-}
-img {
-  max-width: 100%;
+  margin-left: 11%;
+  margin-right: 11%;
 }
 
-figure h1{
-  font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
+/* img {
+  max-width: 1050px;
+  min-width: 300px;
+} */
+
+.img {
+  max-width: 1050px;
+  min-width: 300px;
+}
+
+.para p {
+  font-size: 1.25rem;
+  font-family: 'imperial';
+}
+
+.inflation-theory {
+  display: block;
+  max-width: 1100px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  font-family: 'nyt-cheltenham', sans-serif;
+}
+
+.inflation-grid figure {
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  position: absolute;
+  z-index: -1;
+}
+
+.inflation-grid div {
+  position: relative;
+  width: inherit;
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  flex-basis: auto;
+  flex-shrink: 0;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+.inflation-grid div p {
+  margin-top: 180px;
+  padding: 5px;
+  font-size: small;
+  width: 70%;
+}
+
+.p2-grid {
+  margin-top: 50px;
+}
+
+.main-img h1 {
+  font-family: 'cheltenham', Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
   font-weight: 700;
   color: #121212;
-  font-size: 30px;
+  font-size: 40px;
 }
-
-
 
 .nav2 ul {
   display: block;
@@ -154,12 +276,12 @@ figure h1{
   line-height: 11px;
   text-decoration: none;
   vertical-align: baseline;
-  margin: 18px 0px 0px auto;
+  margin: 18px 0 0 auto;
 }
 
 .header2 {
   float: left;
-} 
+}
 
 a {
   text-decoration: inherit;
@@ -175,14 +297,14 @@ a :hover {
 footer {
   padding: 0 3% 45px;
   margin: 0 auto;
-  margin-top: 0px;
+  margin-top: 0;
   margin-right: auto;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-left: auto;
   max-width: 1200px;
   font-size: 11px;
   border-top: #333 1px;
-  text-align: center!important;
+  text-align: center !important;
 }
 
 .footerNav {
@@ -191,16 +313,16 @@ footer {
   border-top-style: solid;
   border-top-width: 1px;
   padding-top: 9px;
-  }
+}
 
 .footerNav li {
   display: inline-block;
   color: #666;
   font-family: nyt-franklin, helvetica, arial, sans-serif;
   padding: 0 10px;
-  padding-top: 0px;
+  padding-top: 0;
   padding-right: 10px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   padding-left: 10px;
   line-height: 20px;
 }
@@ -220,20 +342,24 @@ footer {
   flex: 1 1 0%;
 }
 
-
-/*
-1:07
-aside header h1 {
-  font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
-  font-weight: 700;
-  font-size: 20px;
-  font-style: normal;
-  margin: 0;
+.para {
+  margin-left: 20%;
+  margin-right: 20%;
 }
-header.main h1 {
-  font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
-  font-style: italic;
-  font-weight: 700;
-  color: #121212;
-  font-size: 40px;
-}*/
+
+.comment-button {
+  background-color: #557b92;
+  border: none;
+  color: white;
+  padding: 0 80px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comments-section {
+  display: inline-flex;
+  justify-content: space-between;
+  min-width: 100%;
+  margin-top: 20px;
+  height: 50px;
+}
