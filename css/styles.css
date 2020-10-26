@@ -191,7 +191,6 @@ main {
 }
 
 .universe figure {
-  z-index: -1;
   align-items: center;
   position: absolute;
 }
