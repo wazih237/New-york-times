@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <title>NEW YORK TIMES</title>
+</head>
+<body>
+  <form action="" method="POST">
+    <fieldset class="comment-form">
+      <ul>
+        <li>
+        <label>
+          Username:
+          <input type="text" name="username" required maxlength="20">
+        </label>
+      </li>
+      <li>
+      <label>
+        Email:
+        <input type="email" name="useremail" required maxlength="20">
+      </label>
+    </li>
+    <li>
+      <label>Message:</label>
+      <textarea name="comment" id="" cols="30" rows="10" placeholder="type your comment here" required maxlength="250"></textarea>
+    </li>
+    <li>
+      <label>
+        What is your overall opinion about this article?
+        <select name="choices">
+          <option value="positive">positive</option>
+          <option value="negative">negative</option>
+          <option value="neutral">neutral</option>
+        </select>
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" name="checkbox" value="I want to subscribe to the newsletter">I want to subscribe to the newsletter
+    </li>
+      <button type="submit">Send</button>
+      </ul>
+    </fieldset>
+  </form>
+</body>
+</html>

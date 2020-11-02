@@ -149,7 +149,7 @@ nav {
 
 button {
   margin-right: 10px;
-  background: rgb(86, 123, 149);
+  background: rgb(50, 104, 145);
   cursor: pointer;
   padding: 9px;
   color: white;
@@ -262,11 +262,17 @@ main {
 .comment-btn {
   background-color: rgb(50, 104, 145);
   border-radius: 3px;
-  color: white;
+  color: white !important;
   padding-left: 90px;
   padding-right: 90px;
   cursor: pointer;
-  width: 55%;
+  text-align: center;
+}
+
+.comment-btn button{
+  color: #fff !important;
+  text-decoration: none !important;
+  margin-top: 10px;
 }
 
 .header2 {

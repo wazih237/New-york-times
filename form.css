@@ -1,0 +1,38 @@
+body{
+  background: blue;
+}
+
+.comment-form{
+  margin: 0 auto;
+  width: 600px;
+  padding:1em;
+  border-radius:1em;
+  background: white;
+  height: 90vh;
+}
+
+.comment-form ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comment-form ul li{
+  margin-top: 2.5em;
+
+}
+
+label{
+  display: inline-block;
+  text-align:right;
+}
+
+input,textarea {
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+textarea{
+  vertical-align: top;
+  height: 80px;
+}
